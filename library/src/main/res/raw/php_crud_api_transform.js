@@ -5,7 +5,6 @@ function array_flip(trans) {
 	}
     return tmp_ar;
 };
-
 function get_objects(tables,table_name,where_index,match_value) {
 		var objects = [];
 		for (var record in tables[table_name]['records']) {
@@ -31,9 +30,7 @@ function get_objects(tables,table_name,where_index,match_value) {
 		}
 		return objects;
 };
-
-function php_crud_api_transform(tables)
-{
+function php_crud_api_transform(tables){
     tables =JSON.parse(tables);
 	tree = {};
 	for (var name in tables) {

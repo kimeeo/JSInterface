@@ -23,7 +23,10 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    final SUPPORT_LIBRARY_VERSION = '25.3.0'
+    final SUPPORT_LIBRARY_VERSION = '25.4.0'
     compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
-    compile files('libs/js.jar')
+    // https://mvnrepository.com/artifact/rhino/js
+    compile group: 'rhino', name: 'js', version: '1.7R1'
+
+
 }
